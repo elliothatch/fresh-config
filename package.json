@@ -1,0 +1,43 @@
+{
+    "name": "fresh-config",
+    "version": "1.0.0",
+    "description": "simple node app configuration",
+    "main": "build/index.js",
+    "types": "declarations/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "clean": "node scripts/clean.js",
+        "docs": "typedoc --out docs/ src/",
+        "test": "jest"
+    },
+    "author": {
+        "name": "Elliot Hatch",
+        "email": "elliot.hatch@gmail.com"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^23.3.2",
+        "fs-extra": "^7.0.0",
+        "jest": "^23.6.0",
+        "ts-jest": "^23.1.4",
+        "typedoc": "^0.12.0",
+        "typescript": "^3.0.3"
+    },
+    "dependencies": {
+        "minimist": "^1.2.0"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "testRegex": "(/test/.*|(\\.|/)(test|spec))\\.(tsx?|ts?)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
+    }
+}
